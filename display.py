@@ -5,7 +5,7 @@ import json
 
 q = queue.Queue()
 x = 400
-y = 350
+y = 550
 color = [255, 255, 255]
 black = [0, 0, 0]
 
@@ -32,8 +32,12 @@ def queue():
     return
 
 def dequeue(screen):
-    innie = recognize_speech()
-    q.put(innie)
+    try:
+        innie = recognize_speech()
+        q.put(innie)
+    except:
+        pass
+
     if(q.empty()):
         #print("Empty queue")
         pg.display.flip()
