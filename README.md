@@ -1,0 +1,1 @@
+Automatic Closed Captioning for the hard of hearing. In order to use it, you will need to use your own speech recognition authentication key, from Google Cloud or otherwise.
